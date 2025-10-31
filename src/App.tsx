@@ -124,16 +124,6 @@ function App() {
     github: 'https://github.com/jankowalski',
   };
 
-  const getSkillColor = (level: Skill['level']): string => {
-    const colors = {
-      'Początkujący': 'bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300',
-      'Średniozaawansowany': 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300',
-      'Zaawansowany': 'bg-purple-50 text-purple-700 border border-purple-200 hover:bg-purple-100 hover:border-purple-300',
-      'Expert': 'bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 hover:border-rose-300',
-    };
-    return colors[level];
-  };
-
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
       {/* Główny kontener CV */}
